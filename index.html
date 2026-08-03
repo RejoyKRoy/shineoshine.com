@@ -428,6 +428,21 @@
   .pricing-note{ text-align:center; color:var(--silver-dim); font-size:13.5px; max-width:480px; margin:0 auto; }
   .pricing-cta{ display:flex; justify-content:center; margin-top:28px; }
 
+  /* ---------- GUARANTEE ---------- */
+  .guarantee{ background:var(--forge-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .guarantee-grid{ display:grid; grid-template-columns:200px 1fr; gap:56px; align-items:center; }
+  @media (max-width:800px){ .guarantee-grid{ grid-template-columns:1fr; gap:32px; text-align:center; } }
+  .guarantee-seal{ position:relative; width:190px; height:190px; margin:0 auto; display:flex; align-items:center; justify-content:center; }
+  .guarantee-seal svg{ position:absolute; inset:0; width:100%; height:100%; }
+  .guarantee-seal-text{ position:relative; text-align:center; }
+  .guarantee-seal-text .yrs{ font-family:var(--display); font-size:38px; font-weight:600; line-height:1; color:var(--brass); display:block; }
+  .guarantee-seal-text .lbl{ font-family:var(--mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--silver-dim); margin-top:8px; display:block; }
+  .guarantee-list{ list-style:none; margin-top:22px; display:grid; gap:14px; }
+  .guarantee-list li{ display:flex; gap:12px; align-items:flex-start; color:var(--silver-dim); font-size:14.5px; }
+  @media (max-width:800px){ .guarantee-list li{ text-align:left; } }
+  .guarantee-list li svg{ flex-shrink:0; margin-top:3px; color:var(--brass); }
+  .guarantee-note{ font-family:var(--mono); font-size:11.5px; letter-spacing:0.03em; color:var(--copper); margin-top:20px; }
+
   /* ---------- FAQ ---------- */
   .faq-item{ border-bottom:1px solid var(--line); padding:24px 0; }
   .faq-q{ display:flex; justify-content:space-between; align-items:center; cursor:pointer; gap:20px; }
@@ -602,6 +617,7 @@
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#process">Process</a>
+      <a href="#guarantee">Guarantee</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a href="#gallery">Our Work</a>
@@ -620,6 +636,7 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#process">Process</a>
+    <a href="#guarantee">Guarantee</a>
     <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
     <a href="#gallery">Our Work</a>
@@ -701,7 +718,7 @@
     <div class="clientele-inner">
       <span class="eyebrow" style="margin-bottom:0;">Esteemed Clientele</span>
       <!--
-   <div class="clientele-names">
+      <div class="clientele-names">
         <span>Mohanlal</span><span class="dot">·</span>
         <span>Jayaram &amp; Parvathy</span><span class="dot">·</span>
         <span>S. Venkatraghavan</span><span class="dot">·</span>
@@ -823,6 +840,43 @@
           <div class="via">→ 2-week turnaround</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section class="guarantee" id="guarantee">
+  <div class="wrap guarantee-grid">
+    <div class="guarantee-seal">
+      <svg viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="95" cy="95" r="86" fill="none" stroke="#c19a45" stroke-width="1.5" stroke-dasharray="3 7"/>
+        <circle cx="95" cy="95" r="70" fill="none" stroke="#b0603a" stroke-width="1"/>
+        <circle cx="95" cy="95" r="54" fill="none" stroke="#e9e4d8" stroke-opacity="0.25"/>
+      </svg>
+      <div class="guarantee-seal-text">
+        <span class="yrs">2 Yrs</span>
+        <span class="lbl">Shine&nbsp;Guarantee</span>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Our Promise</div>
+      <h2>A 2-year shine guarantee, unheard of elsewhere.</h2>
+      <p class="lede">Most polishers hand your piece back and that's the end of it — what happens after is your problem. We do things differently: every restoration from Shine O Shine comes with a 2-year guarantee on the shine itself, something we haven't seen any other polisher in the business offer.</p>
+      <ul class="guarantee-list">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>If the shine dulls or the piece re-tarnishes unusually within 2 years of delivery, we re-polish it at no extra cost.</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Covers everything we restore — silver, brass and copper, from small trinkets to temple-sized pieces.</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>No fine print to argue over — send us a photo on WhatsApp and we'll sort it out.</span>
+        </li>
+      </ul>
+      <div class="guarantee-note">→ Noted on every invoice we issue, so it's on record from day one.</div>
     </div>
   </div>
 </section>
@@ -958,6 +1012,7 @@
         <h5>Explore</h5>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
+        <a href="#guarantee">Guarantee</a>
         <a href="#pricing">Pricing</a>
         <a href="https://share.google/NHJESoO6OQXuYXK29" target="_blank" rel="noopener">Directions</a>
       </div>
